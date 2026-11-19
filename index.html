@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МурахоСвіт — Сторінка 1: Головна Енциклопедія</title>
+    <meta name="description" content="Лабораторна робота: Сторінка 1 присвячена анатомії мурахи, кастовій системі колонії, архітектурі підземного мурашника та екологічній ролі.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐜</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Головна таблиця стилів проєкту -->
+    <link rel="stylesheet" href="css/ants.css">
+</head>
+<body>
+
+    <!-- Шапка сайту та навігація -->
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🐜</div>
+                <div>Мурахо<span>Світ</span></div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link active-page">Головна (Стор. 1)</a></li>
+                <li><a href="#about" class="nav-link">Анатомія</a></li>
+                <li><a href="#castes" class="nav-link">Ієрархія</a></li>
+                <li><a href="#anthill" class="nav-link">Мурашник</a></li>
+                <li><a href="#ecology" class="nav-link">Екологія</a></li>
+                <li><a href="interactive.html" class="nav-link" style="color: var(--primary-light);">Види та Інтерактив (Стор. 2) →</a></li>
+            </ul>
+
+            <a href="interactive.html" class="nav-cta">
+                <span>⚡</span> Дослідити Інтерактив (Стор. 2)
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
+        </div>
+    </header>
+
+    <!-- Біжуча анімована доріжка мурах -->
+    <div class="ant-trail" style="margin-top: 76px;">
+        <div class="ant-walker">
+            <span>🐜 🌿 Головна енциклопедія</span>
+            <span>🐜 🌾 Анатомія та органи</span>
+            <span>🐜 🍃 Кастовий устрій</span>
+            <span>🐜 🪵 Архітектура підземелля</span>
+            <span>🐜 💧 140 мільйонів років еволюції</span>
+            <span>🐜 🍂 Санітари природи</span>
+            <span>🐜 🌿 20 квадрильйонів особин</span>
+            <span>🐜 🌾</span>
+        </div>
+    </div>
+
+    <!-- Головний екран (Hero) Сторінки 1 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="page-indicator-badge">
+                    <span>📖</span> Сторінка 1 з 2 • Життя та устрій колонії
+                </div>
+                <h1>
+                    Таємниці Мурашиної Цивілізації: <br>
+                    <span class="highlight">Сила, Розум та Співпраця</span>
+                </h1>
+                <p class="hero-desc">
+                    Вони жили за часів динозаврів, будують складні підземні мегаполіси з вентиляцією, ведуть тваринництво і сільське господарство, а їхня спільна маса перевищує вагу всіх диких птахів і ссавців разом узятих.
+                </p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">
+                        <span>🔍</span> Дослідити анатомію
+                    </a>
+                    <a href="interactive.html" class="btn-secondary">
+                        <span>🧪</span> Перейти до Інтерактиву (Стор. 2) →
+                    </a>
+                </div>
+            </div>
+
+            <!-- Статистика -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15 000+</div>
+                    <div class="stat-label">Описаних наукою видів мурах на Землі</div>
+                </div>
+                <div class="stat-card" style="--primary: #f59e0b;">
+                    <div class="stat-number">20 квадрлн</div>
+                    <div class="stat-label">Орієнтовна кількість мурах на планеті (20 000 000 000 000 000)</div>
+                </div>
+                <div class="stat-card" style="--primary: #38bdf8;">
+                    <div class="stat-number">50×</div>
+                    <div class="stat-label">Власної ваги здатна підіймати середня мураха</div>
+                </div>
+                <div class="stat-card" style="--primary: #ec4899;">
+                    <div class="stat-number">140 млн</div>
+                    <div class="stat-label">Років безперервної еволюції з крейдового періоду</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 1: Анатомія та біологія -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Біологічна досконалість</span>
+                <h2 class="section-title">Як влаштована мураха?</h2>
+                <p class="section-desc">
+                    Тіло мурахи — це шедевр природної біомеханіки: міцний екзоскелет із хітину, надчутливі сенсори-антени, гідравлічні щелепи та спеціальний "соціальний шлунок".
+                </p>
+            </div>
+
+            <div class="anatomy-container">
+                <div class="anatomy-visual">
+                    <!-- Векторна SVG-ілюстрація будови тіла мурахи -->
+                    <svg class="ant-illustration-svg" viewBox="0 0 500 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#4ade80"/>
+                                <stop offset="50%" stop-color="#16a34a"/>
+                                <stop offset="100%" stop-color="#052e16"/>
+                            </linearGradient>
+                            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="6" result="blur" />
+                                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                            </filter>
+                        </defs>
+                        <!-- Лапки -->
+                        <path d="M140 160 Q110 110 80 130 T60 210" stroke="#22c55e" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M220 170 Q190 100 150 140 T110 240" stroke="#22c55e" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M270 170 Q290 90 350 120 T390 230" stroke="#22c55e" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M160 180 Q140 230 110 240 T90 290" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M230 185 Q220 250 190 270 T180 300" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+                        <path d="M280 185 Q320 240 370 260 T420 280" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+                        <!-- Антени -->
+                        <path d="M100 130 Q60 110 40 70" stroke="#4ade80" stroke-width="3" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+                        <circle cx="40" cy="70" r="4" fill="#4ade80"/>
+                        <path d="M95 145 Q50 140 30 120" stroke="#4ade80" stroke-width="3" stroke-linecap="round" fill="none"/>
+                        <circle cx="30" cy="120" r="4" fill="#4ade80"/>
+
+                        <!-- Щелепи (Мандібули) -->
+                        <path d="M85 160 Q65 170 55 160 Q70 150 85 155" fill="#eab308"/>
+                        <path d="M85 165 Q65 178 60 170 Q75 160 85 165" fill="#ca8a04"/>
+
+                        <!-- Голова -->
+                        <ellipse cx="115" cy="150" rx="35" ry="25" fill="url(#bodyGrad)" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.5))"/>
+                        <circle cx="100" cy="140" r="6" fill="#000000" stroke="#86efac" stroke-width="1.5"/>
+
+                        <!-- Груди (Мезосома) -->
+                        <ellipse cx="210" cy="165" rx="50" ry="22" fill="url(#bodyGrad)" transform="rotate(5, 210, 165)"/>
+
+                        <!-- Стебельце (Петіоль) -->
+                        <ellipse cx="275" cy="167" rx="14" ry="10" fill="#16a34a"/>
+                        <circle cx="282" cy="160" r="7" fill="#22c55e"/>
+
+                        <!-- Черевце (Гастер) -->
+                        <ellipse cx="370" cy="165" rx="75" ry="38" fill="url(#bodyGrad)" transform="rotate(-10, 370, 165)"/>
+                        <path d="M330 145 Q345 165 330 185" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                        <path d="M360 135 Q380 165 360 195" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                        <path d="M395 135 Q415 165 400 190" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+
+                        <!-- Жало / Отвір залози -->
+                        <polygon points="445,172 455,175 445,178" fill="#eab308"/>
+                    </svg>
+
+                    <div class="anatomy-legend">
+                        <span class="legend-tag">⚡ Антени-локатори</span>
+                        <span class="legend-tag">✂️ Мандібули</span>
+                        <span class="legend-tag">🍯 Соціальний шлунок</span>
+                        <span class="legend-tag">🛡️ Хітиновий панцир</span>
+                    </div>
+                </div>
+
+                <div class="anatomy-points">
+                    <div class="anatomy-card">
+                        <div class="anatomy-card-head">
+                            <div class="part-icon">📡</div>
+                            <div class="part-name">Колінчасті антени (вусики)</div>
+                        </div>
+                        <div class="part-desc">
+                            Найважливіший орган чуття. Вусики вловлюють молекули запахів (феромонів), сприймають текстуру поверхонь і навіть вимірюють вологість і температуру повітря в колонії.
+                        </div>
+                    </div>
+
+                    <div class="anatomy-card">
+                        <div class="anatomy-card-head">
+                            <div class="part-icon">⚔️</div>
+                            <div class="part-name">Мандібули (потужні жвали)</div>
+                        </div>
+                        <div class="part-desc">
+                            Багатофункціональні щелепи: ними мураха розпилює деревину, переносить личинок із хірургічною ніжністю, захищається від ворогів та подрібнює тверде насіння.
+                        </div>
+                    </div>
+
+                    <div class="anatomy-card">
+                        <div class="anatomy-card-head">
+                            <div class="part-icon">🍯</div>
+                            <div class="part-name">Соціальний шлунок (Воло)</div>
+                        </div>
+                        <div class="part-desc">
+                            У черевці є два шлунки: власний та "соціальний". Їжа з соціального шлунка призначена не для самої мурахи, а для того, щоб ділитися з побратимами та годувати личинок (процес трофалаксису).
+                        </div>
+                    </div>
+
+                    <div class="anatomy-card">
+                        <div class="anatomy-card-head">
+                            <div class="part-icon">🦵</div>
+                            <div class="part-name">Лапки з мікрогачками</div>
+                        </div>
+                        <div class="part-desc">
+                            Шість лапок мають кігтики та клейкі еластичні подушечки (аролії), завдяки яким мураха може триматися за вертикальне скло та нести здобич догори дриґом.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 2: Кастова система -->
+    <section class="section" id="castes">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Суспільний устрій</span>
+                <h2 class="section-title">Кастова система мурашника</h2>
+                <p class="section-desc">
+                    У мурашиному суспільстві панує абсолютний розподіл обов'язків. Кожна особина від народження має чітке призначення для процвітання всієї супер-сім'ї.
+                </p>
+            </div>
+
+            <div class="castes-grid">
+                <!-- Королева -->
+                <div class="caste-card" style="--caste-color: #f59e0b; --caste-badge-bg: rgba(245, 158, 11, 0.15);">
+                    <span class="caste-badge">Королівська особа</span>
+                    <div class="caste-avatar">👑</div>
+                    <h3 class="caste-title">Королева (Матка)</h3>
+                    <div class="caste-role">Засновниця та серце колонії</div>
+                    <p class="caste-desc">
+                        Вона не керує армією наказовим тоном, проте її феромони — це хімічний закон для всіх мурах. Вона забезпечує життя колонії, відкладаючи до кількох тисяч яєць щодня.
+                    </p>
+                    <ul class="caste-traits">
+                        <li><span>Тривалість життя:</span> до 20–30 років!</li>
+                        <li><span>Особливість:</span> скидає крила після шлюбу</li>
+                        <li><span>Захист:</span> охороняється найкращими воїнами</li>
+                    </ul>
+                </div>
+
+                <!-- Робоча мураха -->
+                <div class="caste-card" style="--caste-color: #22c55e; --caste-badge-bg: rgba(34, 197, 94, 0.15);">
+                    <span class="caste-badge">Основа соціуму</span>
+                    <div class="caste-avatar">🛠️</div>
+                    <h3 class="caste-title">Робоча мураха</h3>
+                    <div class="caste-role">Трудівниці без права на відпочинок</div>
+                    <p class="caste-desc">
+                        Усі робочі мурахи — це самки без здатності до розмноження. Залежно від віку вони змінюють професії: від доглядальниць за малюками до відчайдушних мисливців-фуражирів.
+                    </p>
+                    <ul class="caste-traits">
+                        <li><span>Тривалість життя:</span> від 1 до 3 років</li>
+                        <li><span>Обов'язки:</span> прибирання, годування, будова</li>
+                        <li><span>Кількість:</span> понад 95% усього населення</li>
+                    </ul>
+                </div>
+
+                <!-- Солдат -->
+                <div class="caste-card" style="--caste-color: #ef4444; --caste-badge-bg: rgba(239, 68, 68, 0.15);">
+                    <span class="caste-badge">Військова еліта</span>
+                    <div class="caste-avatar">🛡️</div>
+                    <h3 class="caste-title">Мураха-солдат</h3>
+                    <div class="caste-role">Живі щити та важка артилерія</div>
+                    <p class="caste-desc">
+                        Відрізняються гіпертрофованою головою з гігантськими жвалами. Їхнє тіло пристосоване для блокування тунелів мурашника власною головою у разі ворожого вторгнення.
+                    </p>
+                    <ul class="caste-traits">
+                        <li><span>Зброя:</span> надпотужні м'язи щелеп</li>
+                        <li><span>Тактика:</span> утримання проходів, захист матки</li>
+                        <li><span>Побічна роль:</span> розколювання міцних насінин</li>
+                    </ul>
+                </div>
+
+                <!-- Крилаті самці -->
+                <div class="caste-card" style="--caste-color: #38bdf8; --caste-badge-bg: rgba(56, 189, 248, 0.15);">
+                    <span class="caste-badge">Сезонні гості</span>
+                    <div class="caste-avatar">✈️</div>
+                    <h3 class="caste-title">Крилаті самці</h3>
+                    <div class="caste-role">Місія продовження мурашиного роду</div>
+                    <p class="caste-desc">
+                        З'являються в гнізді лише раз на рік під час періоду "весільного льоту". Їхнє єдине життєве завдання — запліднити молодих маток у польоті для заснування нових колоній.
+                    </p>
+                    <ul class="caste-traits">
+                        <li><span>Тривалість життя:</span> кілька тижнів</li>
+                        <li><span>Особливість:</span> мають повноцінні крила</li>
+                        <li><span>Доля:</span> гинуть невдовзі після польоту</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 3: Інтерактивна схема мурашника -->
+    <section class="section" id="anthill">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Інженерія природи</span>
+                <h2 class="section-title">Анатомія підземного мегаполіса</h2>
+                <p class="section-desc">
+                    Те, що ми бачимо над землею — лише дах! Справжнє місто мурах заглиблюється на 2 метри під землю, має клімат-контроль та десятки спеціалізованих відсіків.
+                </p>
+            </div>
+
+            <div class="anthill-box">
+                <div class="anthill-visual">
+                    <button class="anthill-level-btn active" onclick="selectAnthillLevel(0)">
+                        <span>☀️ 1. Зовнішній купол та солярій</span>
+                        <span class="lvl-num">Поверхня</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(1)">
+                        <span>🍼 2. Дитячі ясла та інкубатори</span>
+                        <span class="lvl-num">-20 см</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(2)">
+                        <span>🌾 3. Продовольчі склади (Комори)</span>
+                        <span class="lvl-num">-50 см</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(3)">
+                        <span>👑 4. Палац королеви (Камера матки)</span>
+                        <span class="lvl-num">-100 см</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(4)">
+                        <span>🍄 5. Грибні ферми та теплиці</span>
+                        <span class="lvl-num">-130 см</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(5)">
+                        <span>🗑️ 6. Камера відходів та цвинтар</span>
+                        <span class="lvl-num">-160 см</span>
+                    </button>
+                    <button class="anthill-level-btn" onclick="selectAnthillLevel(6)">
+                        <span>❄️ 7. Зимовий прихисток (Глибокий сон)</span>
+                        <span class="lvl-num">-200 см</span>
+                    </button>
+                </div>
+
+                <div class="anthill-level-info" id="anthillInfo">
+                    <span class="badge-lvl" id="lvlBadge">Рівень 1 (Поверхня)</span>
+                    <h3 id="lvlTitle">Зовнішній купол та солярій</h3>
+                    <p id="lvlDesc">
+                        Складений із хвоїнок, гілочок і лусочок. Працює як сонячний колектор та водовідштовхувальний дах. Вранці мурахи виходять у верхні камери («солярії»), гріються під променями сонця, а потім біжать углиб гнізда, працюючи як живі грілки для обігріву яєць.
+                    </p>
+                    <div class="anthill-level-facts">
+                        <span id="lvlFact">🌡️ Температура: на 5-10°C тепліша за довкілля завдяки біологічному гниттю та сонцю.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 4: Екологія та значення -->
+    <section class="section" id="ecology">
+        <div class="container">
+            <div class="ecology-banner">
+                <div>
+                    <span class="section-subtitle">Охорона природи</span>
+                    <h2 style="font-size: 2.2rem; margin-bottom: 16px; color:#fff;">Чому без мурах загинуть ліси?</h2>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        Мурахи — це не просто комахи, а фундаментальний вид (keystone species), на якому тримається рівновага цілих континентів:
+                    </p>
+                    <ul class="ecology-list">
+                        <li>
+                            <span class="ecology-check">✓</span>
+                            <span><strong>Аерація та удобрення ґрунту:</strong> перемішують і збагачують гумус фосфором і калієм навіть ефективніше за дощових черв'яків.</span>
+                        </li>
+                        <li>
+                            <span class="ecology-check">✓</span>
+                            <span><strong>Мірмекохорія:</strong> розносять насіння тисяч видів лісових квітів та рослин (фіалок, пролісків, рясту).</span>
+                        </li>
+                        <li>
+                            <span class="ecology-check">✓</span>
+                            <span><strong>Лісовий імунітет:</strong> знищують спалахи масового розмноження шкідників хвої та листя.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ecology-quote">
+                    <p class="ecology-quote-text">
+                        «Якби люди раптом зникли, природа Землі розквітла б з новою силою. Але якби зникли мурахи — біосфера зазнала б катастрофічного краху протягом кількох десятиліть.»
+                    </p>
+                    <div class="ecology-author">— Едвард О. Вілсон, провідний світовий мірмеколог, Гарвард</div>
+                </div>
+            </div>
+
+            <!-- Банер-перехід на Сторінку 2 -->
+            <div class="page-switch-banner">
+                <div class="page-switch-text">
+                    <h3>🧪 Бажаєте випробувати інтерактивні інструменти?</h3>
+                    <p>Перейдіть на <strong>Сторінку 2</strong>, де на вас чекають галерея унікальних видів світу, калькулятор мурашиної сили, пізнавальна вікторина та генератор фактів!</p>
+                </div>
+                <a href="interactive.html" class="btn-primary">
+                    <span>Перейти на Сторінку 2</span> <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підвал (Footer) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">🐜</div>
+                        <div>Мурахо<span>Світ</span></div>
+                    </a>
+                    <p>
+                        Навчальний двосторінковий вебпроєкт про дивовижну біологію, соціальну структуру та екологічну місію мурах.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Сторінка 1: Енциклопедія</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Анатомія та будова</a></li>
+                        <li><a href="#castes">Ієрархія колонії</a></li>
+                        <li><a href="#anthill">Схема мурашника</a></li>
+                        <li><a href="#ecology">Екологічна роль</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Сторінка 2: Інтерактив</h4>
+                    <ul class="footer-links">
+                        <li><a href="interactive.html#species">Дивовижні види світу</a></li>
+                        <li><a href="interactive.html#calculator">Калькулятор мурашиної сили</a></li>
+                        <li><a href="interactive.html#quiz">Вікторина на знання</a></li>
+                        <li><a href="interactive.html#facts">Цікаві факти</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 МурахоСвіт — Лабораторна робота. Всі права захищено.</div>
+                <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>↑</span> Повернутися до початку
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript логіка Сторінки 1 -->
+    <script>
+        // Мобільне меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                menuToggle.textContent = '☰';
+            });
+        });
+
+        // Інтерактивна схема поверхів мурашника
+        const anthillLevels = [
+            {
+                badge: "Рівень 1 (Поверхня)",
+                title: "Зовнішній купол та солярій",
+                desc: "Складений із хвоїнок, гілочок і лусочок. Працює як сонячний колектор та водовідштовхувальний дах. Вранці мурахи виходять у верхні камери («солярії»), гріються під променями сонця, а потім біжать углиб гнізда, працюючи як живі грілки для обігріву яєць.",
+                fact: "🌡️ Температура: на 5-10°C тепліша за довкілля завдяки біологічному гниттю та сонцю."
+            },
+            {
+                badge: "Рівень 2 (-20 см)",
+                title: "Дитячі ясла та інкубатори",
+                desc: "Тут у спеціальних камерах з ідеальною вологістю лежать яйця, ростуть личинки та дозрівають лялечки. Робочі няньки постійно переносять їх з камери в камеру протягом дня залежно від температури ґрунту.",
+                fact: "👶 Личинок постійно вилизують, вкриваючи бактерицидним секретом проти плісняви."
+            },
+            {
+                badge: "Рівень 3 (-50 см)",
+                title: "Продовольчі склади (Комори)",
+                desc: "Зерносховища та м'ясні цехи. Тут зберігається зібране насіння, сухі комахи та краплі солодкої паді. Мурахи ретельно сушать насіння на сонечку після дощу, щоб воно не проростало в темряві.",
+                fact: "🌾 Якщо зернятко починає проростати, мурахи швидко відкушують паросток."
+            },
+            {
+                badge: "Рівень 4 (-100 см)",
+                title: "Палац королеви (Царська камера)",
+                desc: "Найбезпечніше місце гнізда під потужним шаром землі. Тут проживає матка в оточенні особистої свити. Її годують найкращим нектаром, чистять та негайно забирають кожне відкладене яйце до інкубатора.",
+                fact: "👑 У разі небезпеки або затоплення свита евакуює королеву в першу чергу."
+            },
+            {
+                badge: "Рівень 5 (-130 см)",
+                title: "Грибні ферми та теплиці",
+                desc: "Характерні для мурах-листорізів. У стерильних підземних залах із контрольованою вентиляцією мурахи культивують міцелій унікального гриба, який більше не зустрічається ніде в дикій природі.",
+                fact: "🍄 Мурахи виробляють власний антибіотик для знищення бур'янів-бактерій."
+            },
+            {
+                badge: "Рівень 6 (-160 см)",
+                title: "Камера відходів та цвинтар",
+                desc: "Мурахи — педантичні санітари. Усі відходи, порожні оболонки лялечок та померлих побратимів відносять у спеціальний ізольований тупиковий відсік або виносять далеко за межі гнізда.",
+                fact: "🧼 Мурахи-сміттярі мають спеціальні обов'язки і рідко контактують із няньками."
+            },
+            {
+                badge: "Рівень 7 (-200 см)",
+                title: "Зимовий прихисток (Глибокий сон)",
+                desc: "Найглибші камери нижче лінії промерзання ґрунту. Восени вся колонія спускається сюди, мурахи тісно збиваються в один живий клубок і впадають у стан діапаузи (анабіозу) до першого весняного тепла.",
+                fact: "❄️ Їхня кров містить гліцерин — природний антифриз, що рятує від замерзання."
+            }
+        ];
+
+        function selectAnthillLevel(index) {
+            const buttons = document.querySelectorAll('.anthill-level-btn');
+            buttons.forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
+            });
+
+            const data = anthillLevels[index];
+            const infoBox = document.getElementById('anthillInfo');
+            
+            infoBox.style.opacity = '0.3';
+            setTimeout(() => {
+                document.getElementById('lvlBadge').textContent = data.badge;
+                document.getElementById('lvlTitle').textContent = data.title;
+                document.getElementById('lvlDesc').textContent = data.desc;
+                document.getElementById('lvlFact').textContent = data.fact;
+                infoBox.style.opacity = '1';
+            }, 150);
+        }
+    </script>
+</body>
+</html>
