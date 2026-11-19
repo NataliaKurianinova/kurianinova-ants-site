@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МурахоСвіт — Сторінка 2: Інтерактивна Лабораторія та Види</title>
+    <meta name="description" content="Лабораторна робота: Сторінка 2 містить каталог дивовижних видів мурах, калькулятор сили, вікторину та генератор фактів.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧪</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Головна таблиця стилів проєкту -->
+    <link rel="stylesheet" href="css/ants.css">
+</head>
+<body>
+
+    <!-- Шапка сайту та навігація -->
+    <header class="site-header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🐜</div>
+                <div>Мурахо<span>Світ</span></div>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">← Головна (Стор. 1)</a></li>
+                <li><a href="interactive.html" class="nav-link active-page">Види та Інтерактив (Стор. 2)</a></li>
+                <li><a href="#species" class="nav-link">Види мурах</a></li>
+                <li><a href="#superpowers" class="nav-link">Суперсили</a></li>
+                <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+                <li><a href="#quiz" class="nav-link">Вікторина</a></li>
+            </ul>
+
+            <a href="index.html" class="nav-cta">
+                <span>←</span> На Головну (Стор. 1)
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню">☰</button>
+        </div>
+    </header>
+
+    <!-- Біжуча анімована доріжка мурах -->
+    <div class="ant-trail" style="margin-top: 76px;">
+        <div class="ant-walker">
+            <span>🧪 🌿 Інтерактивна лабораторія</span>
+            <span>🐜 💥 Мураха-куля</span>
+            <span>🐜 🍃 Листорізи-фермери</span>
+            <span>🐜 🍯 Медові бочки</span>
+            <span>🐜 🏋️ Калькулятор мурашиної сили</span>
+            <span>🐜 🧩 Вікторина на ерудицію</span>
+            <span>🐜 🧠 Колективний розум колонії</span>
+            <span>🐜 🌾</span>
+        </div>
+    </div>
+
+    <!-- Головний екран (Hero) Сторінки 2 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="page-indicator-badge">
+                    <span>🧪</span> Сторінка 2 з 2 • Інтерактивні досліди та види
+                </div>
+                <h1>
+                    Дивовижні Види, Суперсили та <br>
+                    <span class="highlight">Інтерактивна Лабораторія</span>
+                </h1>
+                <p class="hero-desc">
+                    Познайомтеся з найнебезпечнішими та наймайстернішими представниками мурашиного світу, розрахуйте свою особисту мурашину суперсилу та перевірте ерудицію в інтерактивному тесті.
+                </p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn-primary">
+                        <span>🏋️</span> Калькулятор сили
+                    </a>
+                    <a href="#quiz" class="btn-secondary">
+                        <span>🧩</span> Пройти вікторину
+                    </a>
+                    <a href="#species" class="btn-secondary">
+                        <span>🐜</span> Каталог видів
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 1: Дивовижні види мурах -->
+    <section class="section" id="species">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Різноманіття планети</span>
+                <h2 class="section-title">Дивовижні види мурах</h2>
+                <p class="section-desc">
+                    Від прадавніх агрономів джунглів до кочових легіонів, які здатні долати будь-які перешкоди живою силою.
+                </p>
+            </div>
+
+            <div class="species-grid">
+                <!-- Leafcutter -->
+                <div class="species-card">
+                    <div class="species-header-art">🍃</div>
+                    <div class="species-body">
+                        <div class="species-latin">Atta cephalotes</div>
+                        <h3 class="species-name">Мураха-листоріз</h3>
+                        <p class="species-desc">
+                            Перші фермери на планеті: вони зрізають свіже листя не для їжі, а щоб пережовувати його на компост і вирощувати на ньому унікальний їстівний гриб. Цьому землеробству вже понад 50 мільйонів років!
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">🌱 Грибні садівники</span>
+                            <span class="species-tag">🌎 Південна Америка</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bullet Ant -->
+                <div class="species-card">
+                    <div class="species-header-art">💥</div>
+                    <div class="species-body">
+                        <div class="species-latin">Paraponera clavata</div>
+                        <h3 class="species-name">Мураха-куля</h3>
+                        <p class="species-desc">
+                            Володар найболючішого укусу серед комах у світі (4.0+ за шкалою болю Шмідта). Біль порівнюють із кульовим пораненням, і він безперервно пульсує протягом 24 годин.
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">⚠️ Смертоносний укус</span>
+                            <span class="species-tag">⏱️ 24 години болю</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honeypot Ant -->
+                <div class="species-card">
+                    <div class="species-header-art">🍯</div>
+                    <div class="species-body">
+                        <div class="species-latin">Myrmecocystus</div>
+                        <h3 class="species-name">Медова мураха</h3>
+                        <p class="species-desc">
+                            Мешканці посушливих пустель. Окремі мурахи-бочки висять на склепіннях гнізда і наповнюють свої черевця солодким нектаром, роздуваючись до розміру виноградини, щоб напувати колонію під час посухи.
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">🍇 Живі резервуари</span>
+                            <span class="species-tag">🏜️ Пустелі США та Австралії</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Army Ant -->
+                <div class="species-card">
+                    <div class="species-header-art">⚔️</div>
+                    <div class="species-body">
+                        <div class="species-latin">Eciton burchellii</div>
+                        <h3 class="species-name">Мурахи-кочівники</h3>
+                        <p class="species-desc">
+                            Вони ніколи не будують постійних гнізд. Мільйонна колонія перебуває в безупинному русі, а на ніч мурахи зчіплюються своїми лапками, створюючи живе житло (бівак) із власних тіл навколо матки.
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">🏕️ Живі споруди</span>
+                            <span class="species-tag">🏃 Безперервний похід</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weaver Ant -->
+                <div class="species-card">
+                    <div class="species-header-art">🧵</div>
+                    <div class="species-body">
+                        <div class="species-latin">Oecophylla smaragdina</div>
+                        <h3 class="species-name">Мураха-ткач</h3>
+                        <p class="species-desc">
+                            Майстри архітектури крон дерев. Дорослі особини стягують зелене листя своїми тілами, а інші тримають у щелепах личинок і використовують їхній шовк як "клейовий пістолет", зшиваючи міцні висячі гнізда.
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">🪡 Шовкові кравці</span>
+                            <span class="species-tag">🌳 Життя на деревах</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Red Wood Ant -->
+                <div class="species-card">
+                    <div class="species-header-art">🌲</div>
+                    <div class="species-body">
+                        <div class="species-latin">Formica rufa</div>
+                        <h3 class="species-name">Рудий лісовий мураха</h3>
+                        <p class="species-desc">
+                            Знайомий усім мешканець українських лісів. Один великий мурашник захищає близько чверті гектара лісу від шкідливих гусениць, жуків-короїдів та кліщів, споживаючи до 100 000 комах щодня.
+                        </p>
+                        <div class="species-badge-row">
+                            <span class="species-tag">🛡️ Санітар лісу</span>
+                            <span class="species-tag">🇺🇦 Рідна фауна України</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 2: Суперсили та феномени -->
+    <section class="section" id="superpowers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Неймовірні факти</span>
+                <h2 class="section-title">Суперсили мурашиного світу</h2>
+                <p class="section-desc">
+                    Здібності мурах, які надихають інженерів, робототехніків та комп'ютерних вчених усього світу.
+                </p>
+            </div>
+
+            <div class="superpowers-grid">
+                <div class="power-card">
+                    <div class="power-icon">📶</div>
+                    <h3 class="power-title">Хімічний «Інтернет»</h3>
+                    <p class="power-text">
+                        Мурахи залишають доріжки з феромонів. Коли одна знаходить цукор, її зворотний слід стає яскравішим, миттєво мобілізуючи сотні сестер без жодного голосу чи звуку.
+                    </p>
+                </div>
+
+                <div class="power-card">
+                    <div class="power-icon">🐄</div>
+                    <h3 class="power-title">Тваринництво: випас попелиць</h3>
+                    <p class="power-text">
+                        Мурахи тримають попелиць, як люди корів: захищають їх від хижих сонечок, носять на свіжі гілки, а в обмін "доять" їх вусиками, отримуючи солодку падь.
+                    </p>
+                </div>
+
+                <div class="power-card">
+                    <div class="power-icon">⛵</div>
+                    <h3 class="power-title">Непотоплювані живі плоти</h3>
+                    <p class="power-text">
+                        Під час раптових повеней у джунглях вогняні мурахи зчіплюються кігтиками за секунди, утворюючи живий пліт із повітряними кишенями, що може пливти тижнями.
+                    </p>
+                </div>
+
+                <div class="power-card">
+                    <div class="power-icon">🧠</div>
+                    <h3 class="power-title">Суперорганізм та оптимізація</h3>
+                    <p class="power-text">
+                        Колонія діє як єдиний мозок. Комп'ютерні вчені використовують «Мурашиний алгоритм» (ACO) для оптимізації маршрутів доставки та мережевого трафіку.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Генератор випадкових фактів -->
+            <div class="fact-box" id="facts">
+                <div class="fact-content">
+                    <div class="fact-icon">💡</div>
+                    <div>
+                        <div style="font-size:0.8rem; font-weight:700; color:var(--primary); text-transform:uppercase; margin-bottom:4px;">Чи знаєте ви, що...</div>
+                        <div class="fact-text" id="factDisplay">
+                            Мурахи ніколи не сплять у звичному для нас розумінні — замість цього вони роблять близько 250 коротких пауз для мікросну по 1 хвилині протягом доби.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-fact" onclick="generateRandomFact()">
+                    🎲 Інший факт
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 3: Інтерактивний калькулятор сили -->
+    <section class="section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Інтерактивна лабораторія</span>
+                <h2 class="section-title">Калькулятор мурашиної сили</h2>
+                <p class="section-desc">
+                    Якби ви мали пропорційну силу мурахи, яку вагу ви змогли б відірвати від землі та пронести на собі?
+                </p>
+            </div>
+
+            <div class="calculator-wrapper">
+                <div class="calc-grid">
+                    <div class="calc-controls">
+                        <div class="calc-input-group">
+                            <label for="weightSlider">Ваша вага (кг):</label>
+                            <div class="calc-slider-box">
+                                <input type="range" id="weightSlider" class="weight-slider" min="20" max="150" value="70" step="1" oninput="updateCalculator()">
+                                <div class="weight-number-display" id="weightDisplay">70 кг</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label style="display:block; font-size:0.95rem; font-weight:600; color:#fff; margin-bottom:12px;">Виберіть силу виду:</label>
+                            <div class="multiplier-choice">
+                                <button class="multiplier-btn" onclick="setMultiplier(20, this)">Звичайна мураха (×20)</button>
+                                <button class="multiplier-btn active" onclick="setMultiplier(50, this)">Робоча мураха (×50)</button>
+                                <button class="multiplier-btn" onclick="setMultiplier(100, this)">Мураха-носоріг (×100)</button>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
+                            Мурахи володіють неймовірною міцністю завдяки закону квадрата-куба: зі зменшенням розміру тіла площа перерізу м'язів зменшується повільніше, ніж загальна маса.
+                        </p>
+                    </div>
+
+                    <div class="calc-result-box">
+                        <div class="result-label">Ваша суперсила: ви можете підняти</div>
+                        <div class="result-weight" id="calcResultWeight">3 500 <span>кг</span></div>
+                        <div class="result-comparison-icon" id="calcIcon">🦣</div>
+                        <div class="result-comparison-text" id="calcComparison">
+                            Це як дорослий слон або одразу два позашляховики!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Розділ 4: Інтерактивна вікторина -->
+    <section class="section" id="quiz">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Перевірка знань</span>
+                <h2 class="section-title">Вікторина: Наскільки добре ви знаєте мурах?</h2>
+                <p class="section-desc">
+                    Дайте відповідь на 5 запитань і дізнайтеся свій ранг у мурашиній колонії!
+                </p>
+            </div>
+
+            <div class="quiz-card" id="quizContainer">
+                <div class="quiz-header">
+                    <span class="quiz-progress" id="quizProgress">Питання 1 з 5</span>
+                    <span class="quiz-score-badge" id="quizScore">Бали: 0</span>
+                </div>
+
+                <div id="quizQuestionView">
+                    <h3 class="quiz-question" id="quizQuestionText">Скільки років може прожити королева мурах у сприятливих умовах?</h3>
+                    <div class="quiz-options" id="quizOptions">
+                        <!-- Варіанти генеруються JS -->
+                    </div>
+                    <div class="quiz-feedback" id="quizFeedback"></div>
+                    <div class="quiz-actions">
+                        <button class="quiz-next-btn" id="quizNextBtn" onclick="nextQuestion()">Наступне питання →</button>
+                    </div>
+                </div>
+
+                <div class="quiz-result-view" id="quizResultView">
+                    <div class="quiz-result-trophy" id="resultTrophy">🏆</div>
+                    <h3 class="quiz-result-title" id="resultTitle">Вітаємо, Хранитель Мурашника!</h3>
+                    <p class="quiz-result-desc" id="resultDesc">Ви правильно відповіли на 5 з 5 питань. Ваші знання про мікросвіт бездоганні!</p>
+                    <button class="btn-primary" onclick="restartQuiz()">
+                        🔄 Пройти вікторину знову
+                    </button>
+                </div>
+            </div>
+
+            <!-- Банер повернення на Сторінку 1 -->
+            <div class="page-switch-banner">
+                <div class="page-switch-text">
+                    <h3>📖 Бажаєте повторити будову та касти мурашника?</h3>
+                    <p>Поверніться на <strong>Сторінку 1</strong>, щоб переглянути інтерактивну анатомію мурахи, 7 поверхів підземного гнізда та екологічну місію.</p>
+                </div>
+                <a href="index.html" class="btn-primary">
+                    <span>← Повернутися на Сторінку 1</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Підвал (Footer) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">🐜</div>
+                        <div>Мурахо<span>Світ</span></div>
+                    </a>
+                    <p>
+                        Навчальний двосторінковий вебпроєкт про дивовижну біологію, соціальну структуру та екологічну місію мурах.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Сторінка 1: Енциклопедія</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Анатомія та будова</a></li>
+                        <li><a href="index.html#castes">Ієрархія колонії</a></li>
+                        <li><a href="index.html#anthill">Схема мурашника</a></li>
+                        <li><a href="index.html#ecology">Екологічна роль</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Сторінка 2: Інтерактив</h4>
+                    <ul class="footer-links">
+                        <li><a href="#species">Дивовижні види світу</a></li>
+                        <li><a href="#calculator">Калькулятор мурашиної сили</a></li>
+                        <li><a href="#quiz">Вікторина на знання</a></li>
+                        <li><a href="#facts">Цікаві факти</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© 2026 МурахоСвіт — Лабораторна робота. Всі права захищено.</div>
+                <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    <span>↑</span> Повернутися до початку
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript логіка Сторінки 2 -->
+    <script>
+        // Мобільне меню
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            menuToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                menuToggle.textContent = '☰';
+            });
+        });
+
+        // Логіка калькулятора сили
+        let currentMultiplier = 50;
+
+        function setMultiplier(mult, btn) {
+            currentMultiplier = mult;
+            document.querySelectorAll('.multiplier-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            updateCalculator();
+        }
+
+        function updateCalculator() {
+            const weight = parseInt(document.getElementById('weightSlider').value, 10);
+            document.getElementById('weightDisplay').textContent = `${weight} кг`;
+
+            const liftedKg = weight * currentMultiplier;
+            const formattedKg = liftedKg.toLocaleString('uk-UA');
+            document.getElementById('calcResultWeight').innerHTML = `${formattedKg} <span>кг</span>`;
+
+            let icon = '🚗';
+            let compText = '';
+
+            if (liftedKg < 1000) {
+                icon = '🏍️';
+                compText = 'Ви легко змогли б підняти важкий спортивний мотоцикл або квадроцикл над головою однією рукою!';
+            } else if (liftedKg < 2500) {
+                icon = '🚗';
+                compText = 'Ви з легкістю відірвали б від землі повноцінний сімейний седан або кросовер!';
+            } else if (liftedKg < 5000) {
+                icon = '🛻';
+                compText = 'Це еквівалентно великому пікапу, мікроавтобусу або вазі молодого африканського слона!';
+            } else if (liftedKg < 10000) {
+                icon = '🐘';
+                compText = 'Неймовірно! Ви могли б нести дорослого слона-велетня або повністю завантажений будівельний трактор!';
+            } else {
+                icon = '🚀';
+                compText = 'Абсолютний рівень супергероя! Ви подужали б вантажівку з причепом або вагон міського трамвая!';
+            }
+
+            document.getElementById('calcIcon').textContent = icon;
+            document.getElementById('calcComparison').textContent = compText;
+        }
+
+        // Генератор випадкових фактів
+        const interestingFacts = [
+            "Мурахи ніколи не сплять у звичному для нас розумінні — замість цього вони роблять близько 250 коротких пауз для мікросну по 1 хвилині протягом доби.",
+            "Мурахи не мають легень! Кисень надходить у їхні тканини безпосередньо через крихітні мікроотвори з боків тіла — дихальця (трахеї).",
+            "У мурах немає вух, але вони мають дивовижний слух: вони відчувають коливання землі та звукові вібрації своїми лапками.",
+            "Загальна біомаса всіх мурах на Землі приблизно дорівнює або навіть перевищує загальну вагу всього людства!",
+            "Мурахи ведуть справжні війни з іншими колоніями, використовують розвідку, шпигунство та беруть ворожих личинок у «полон».",
+            "Деякі види мурах, наприклад Trap-jaw ant, закривають свої щелепи зі швидкістю понад 200 км/год — це один із найшвидших рухів у живому світі!",
+            "У мурашнику немає начальника: навіть королева не командує робітниками. Усі рішення приймаються завдяки децентралізованому колективному інтелекту."
+        ];
+
+        let lastFactIndex = 0;
+        function generateRandomFact() {
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * interestingFacts.length);
+            } while (nextIndex === lastFactIndex);
+            
+            lastFactIndex = nextIndex;
+            const factEl = document.getElementById('factDisplay');
+            factEl.style.opacity = '0';
+            setTimeout(() => {
+                factEl.textContent = interestingFacts[nextIndex];
+                factEl.style.opacity = '1';
+            }, 200);
+        }
+
+        // Логіка інтерактивної вікторини
+        const quizData = [
+            {
+                question: "Скільки років може прожити королева мурах деяких видів у безпечних умовах?",
+                options: ["Лише кілька місяців", "До 2–3 років", "До 20–30 років", "Близько 100 років"],
+                correct: 2,
+                explanation: "👑 Дивовижний факт! Матки деяких видів, наприклад чорного садового мурахи, доживали в лабораторіях до 28–29 років — це абсолютний рекорд тривалості життя серед комах."
+            },
+            {
+                question: "Чим мурахи здебільшого спілкуються між собою у темряві гнізда?",
+                options: ["Хімічними запахами (феромонами)", "Звуковим писком", "Миготінням очей", "Спеціальним танцем крил"],
+                correct: 0,
+                explanation: "🧪 Головна мова мурах — це хімічні сигнали. За допомогою феромонів вони передають сигнали тривоги, запрошення до їжі або розпізнають побратимів «свій/чужий»."
+            },
+            {
+                question: "Навіщо мурасі потрібен «соціальний шлунок»?",
+                options: ["Щоб перетравлювати отруту", "Щоб зберігати їжу та годувати побратимів", "Для виділення кислоти", "Щоб дихати під водою"],
+                correct: 1,
+                explanation: "🍯 У соціальному шлунку їжа не перетравлюється, а зберігається свіжою, щоб мураха могла поділитися нею з голодними личинками чи королевою."
+            },
+            {
+                question: "Як мурахи-листорізи використовують зрізане свіже зелене листя?",
+                options: ["Їдять його сирим", "Будують з нього човни", "Вирощують на ньому спеціальні гриби", "Утеплюють ним вхід на зиму"],
+                correct: 2,
+                explanation: "🍄 Мурахи-листорізи не їдять листя! Вони пережовують його на кашку і використовують як субстрат для вирощування своїх грибних садів."
+            },
+            {
+                question: "Як мурахи захищають ліс від шкідливих комах?",
+                options: ["Запилюють тільки бур'яни", "Знищують сотні тисяч гусениць та шкідників щодня", "Псують кору старих дерев", "Відлякують птахів"],
+                correct: 1,
+                explanation: "🌲 Один мурашник рудих лісових мурах за літо очищає ліс від майже 1 000 000 шкідливих комах і личинок короїдів!"
+            }
+        ];
+
+        let currentQuestionIdx = 0;
+        let score = 0;
+        let answered = false;
+
+        function loadQuestion() {
+            answered = false;
+            const q = quizData[currentQuestionIdx];
+            document.getElementById('quizProgress').textContent = `Питання ${currentQuestionIdx + 1} з ${quizData.length}`;
+            document.getElementById('quizScore').textContent = `Бали: ${score}`;
+            document.getElementById('quizQuestionText').textContent = q.question;
+            
+            const feedbackBox = document.getElementById('quizFeedback');
+            feedbackBox.style.display = 'none';
+            feedbackBox.className = 'quiz-feedback';
+
+            const nextBtn = document.getElementById('quizNextBtn');
+            nextBtn.style.display = 'none';
+
+            const optionsContainer = document.getElementById('quizOptions');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((optText, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-opt-btn';
+                btn.innerHTML = `<span style="opacity:0.6; font-weight:700;">${String.fromCharCode(65 + index)}.</span> ${optText}`;
+                btn.onclick = () => selectQuizOption(index);
+                optionsContainer.appendChild(btn);
+            });
+        }
+
+        function selectQuizOption(selectedIndex) {
+            if (answered) return;
+            answered = true;
+
+            const q = quizData[currentQuestionIdx];
+            const buttons = document.querySelectorAll('.quiz-opt-btn');
+            const feedbackBox = document.getElementById('quizFeedback');
+            const nextBtn = document.getElementById('quizNextBtn');
+
+            buttons.forEach((btn, idx) => {
+                btn.disabled = true;
+                if (idx === q.correct) {
+                    btn.classList.add('correct');
+                } else if (idx === selectedIndex) {
+                    btn.classList.add('wrong');
+                }
+            });
+
+            if (selectedIndex === q.correct) {
+                score++;
+                document.getElementById('quizScore').textContent = `Бали: ${score}`;
+                feedbackBox.style.display = 'block';
+                feedbackBox.style.borderColor = 'var(--primary)';
+                feedbackBox.style.background = 'rgba(34, 197, 94, 0.1)';
+                feedbackBox.innerHTML = `<strong>✅ Правильно!</strong> ${q.explanation}`;
+            } else {
+                feedbackBox.style.display = 'block';
+                feedbackBox.style.borderColor = 'var(--accent-red)';
+                feedbackBox.style.background = 'rgba(239, 68, 68, 0.1)';
+                feedbackBox.innerHTML = `<strong>❌ Не зовсім так.</strong> ${q.explanation}`;
+            }
+
+            nextBtn.style.display = 'inline-block';
+            if (currentQuestionIdx === quizData.length - 1) {
+                nextBtn.textContent = 'Подивитися результат 🏆';
+            } else {
+                nextBtn.textContent = 'Наступне питання →';
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestionIdx++;
+            if (currentQuestionIdx < quizData.length) {
+                loadQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quizQuestionView').style.display = 'none';
+            const resultView = document.getElementById('quizResultView');
+            resultView.style.display = 'block';
+
+            const trophy = document.getElementById('resultTrophy');
+            const title = document.getElementById('resultTitle');
+            const desc = document.getElementById('resultDesc');
+
+            if (score === 5) {
+                trophy.textContent = '👑';
+                title.textContent = 'Титул: Верховна Королева Мурашника!';
+                desc.textContent = `Бездоганно! Ви набрали ${score} з 5 балів. Ваші знання про мурах вражають навіть досвідчених ентомологів!`;
+            } else if (score >= 3) {
+                trophy.textContent = '🛡️';
+                title.textContent = 'Титул: Досвідчений Мураха-Солдат';
+                desc.textContent = `Чудовий результат! Ви набрали ${score} з 5 балів. Ви чудово знаєте закони підземного мегаполіса!`;
+            } else {
+                trophy.textContent = '🌱';
+                title.textContent = 'Титул: Допитлива Личинка';
+                desc.textContent = `Ви набрали ${score} з 5 балів. Світ мурах сповнений дивовижних таємниць, які ви тепер знаєте набагато краще!`;
+            }
+        }
+
+        function restartQuiz() {
+            currentQuestionIdx = 0;
+            score = 0;
+            document.getElementById('quizQuestionView').style.display = 'block';
+            document.getElementById('quizResultView').style.display = 'none';
+            loadQuestion();
+        }
+
+        // Ініціалізація при завантаженні
+        window.addEventListener('DOMContentLoaded', () => {
+            updateCalculator();
+            loadQuestion();
+        });
+    </script>
+</body>
+</html>
